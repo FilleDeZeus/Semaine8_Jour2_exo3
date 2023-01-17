@@ -61,9 +61,10 @@ let paralast1 = paralast.nextElementSibling
 let span1 = paralast1.querySelectorAll("span");
 console.log(paralast1);
 
-span1.forEach(element =>{
-    element.addEventListener('click',()=>{
-        span1.forEach(element => element.classList.remove ='bolder-red');
-    element.classList = 'bolder-red';
+span1.forEach(element=>{
+    element.addEventListener('click', () =>{
+        span1.forEach(element => 
+        element.classList.remove("bolder-red"));
+        element.classList.add("bolder-red");
     })
 })
